@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+
+    scroll-behavior: smooth;
+}
+
+.contener-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contener-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contener-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #21c0ff;
+    text-decoration: none;
+}
+.contener-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contener-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contener-header header nav ul li a:hover{
+    color: #21c0ff;
+}
+.nav-responsivo{
+    background-color: #21c0ff;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCION I N I C I O */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contener-banner{
+    padding: 20px;
+    background-color: #000000;
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contener-banner #img{
+    margin-top: 40px;
+    border: 8px solid #21c0ff;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contener-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contener-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+#ling{
+    width: 34px;
+    height: 34px;
+}
+.lingua a img:hover{
+    width: 60px;
+    height: 60px;
+    transform: translateY(-8px);
+    transition: 300ms;
+    
+}
+#redeh3 {
+    margin-top: 15px;
+}
+#linguah3 {
+    margin-top: 10px;
+}
+.lingua {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.inicio .contener-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contener-banner .redes a:hover{
+    background-color: #1CB698;
+}
+.sobremim{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremim .contener-seção{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremim h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.sobremim .contener-seção p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremim .contener-seção p span{
+    color: #21c0ff;
+    font-weight: bold;
+}
+.sobremim .dados{
+    display: flex;
+}
+.sobremim .dados .lista-dados
+{
+    width: 50%;
+}
+.sobremim .dados .lista-dados h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobremim .dados .lista-dados ul{
+    list-style: none;
+}
+.sobremim .dados .lista-dados ul li{
+    margin: 12px 0;
+}
+.sobremim .dados .lista-dados ul li strong{
+    display: inline-block;
+    color: #21c0ff;
+    width: 130px;
+}
+.sobremim .dados .lista-dados ul li span{
+    background-color: #21c0ff;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremim .dados .lista-dados .contenedor-interesses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremim .dados .lista-dados .contenedor-interesses .interesse{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}.sobremim .dados .lista-dados .contenedor-interesses .interesse:hover{
+    background-color: #21c0ff;
+}
+.sobremim .dados .lista-dados .contenedor-interesses .interesse i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremim button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremim button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #21c0ff;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremim button:hover .overlay{
+    width: 100%;
+}
+/* SECCION S K I L L S */
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contener-seção{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.skills .dados{
+    display: flex;
+}
+.skills .dados .lista-dados{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .dados .lista-dados h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progresso{
+    background-color: #21c0ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #21c0ff;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+/* Estas clases se agregaran dinamicamente mediante javascript */
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .php{
+    width: 0%;
+    animation: 2s php forwards;
+}
+@keyframes php {
+    0%{width: 0%;}
+    100%{width: 73%;}
+}
+
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python {
+    0%{width: 0%;}
+    100%{width: 51%;}
+}
+
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+
+.skills .skill .Comu{
+    width: 0%;
+    animation: 2s Comu forwards;
+}
+@keyframes Comu {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .trab{
+    width: 0%;
+    animation: 2s trab forwards;
+}
+@keyframes trab {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .criati{
+    width: 0%;
+    animation: 2s criati forwards;
+}
+@keyframes criati {
+    0%{width: 0%;}
+    100%{width: 74%;}
+}
+
+.skills .skill .dedi{
+    width: 0%;
+    animation: 2s dedi forwards;
+}
+@keyframes dedi {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .logistica{
+    width: 0%;
+    animation: 2s logistica forwards;
+}
+@keyframes logistica {
+    0%{width: 0%;}
+    100%{width: 86%;}
+}
+/* curriculo */
+.curriculo{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculo .contener-seção{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculo h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.curriculo .dados{
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    justify-items: center;
+
+}
+.curriculo .dados .lista-dados{
+    width: 70%;
+    padding: 0 20px;
+}
+.curriculo .dados .lista-dados h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 28vh;
+    height: 25vh;
+    background-color: rgb(0, 83, 83);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.barra {
+    width: 100%;
+    height: 35px;
+    background-color: azure;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra h1 {
+    color: #131517;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-area {
+    padding: 10px;
+}
+
+.card-area p {
+    color: #00ffe7;
+}
+
+#espaço {
+    margin-left: 10px;
+    color: #fcff5c;
+    margin-top: 5px;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+/* SECCION PORTFOLIO */
+.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contener-seção{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .projeto{
+    position: relative;
+    width: 340px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .galeria .projeto img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.portfolio .galeria .projeto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .galeria .projeto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .galeria .projeto .overlay:hover{
+    opacity: 1;
+}
+.portfolio .galeria .projeto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+/* SECCION contato */
+.contato{
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contato .contener-seção{
+    max-width: 1100px;
+    margin: auto;
+}
+.contato h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contato .dados{
+    display: flex;
+}
+.contato .lista-dados{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contato .lista-dados input, .contato .lista-dados textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contato button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contato button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #21c0ff;
+    z-index: -1;
+    transition: 1s;
+}
+.contato button:hover .overlay{
+    width: 100%;
+}
+.contato .lista-dados img{
+    width: 100%;
+}
+.contato .lista-dados .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contato .lista-dados .info ul{
+    list-style: none;
+}
+.contato .lista-dados .info ul li{
+    margin-bottom: 20px;
+}
+.contato .lista-dados .info ul li i{
+    color: #21c0ff;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .retorno{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #21c0ff;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsivo{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+
+
+    .inicio .contener-banner {
+        margin-top: 70px;
+    }
+    .sobremim .dados{
+        display: block;
+    }
+    .sobremim .dados .lista-dados{
+        width: fit-content;
+    }
+
+    .skills .dados{
+        display: block;
+    }
+    .skills .dados .lista-dados{
+        width: 100%;
+    }
+    .skills .dados .lista-dados .barra-skill{
+        width: 100%;
+    }
+
+    .curriculo .dados{
+        display: block;
+    }
+    .curriculo .dados .lista-dados{
+        width: 100%;
+    }
+
+    .portfolio .galeria{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .portfolio .galeria .projeto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .projeto img{
+        width: 100%;
+    }
+    .contato .dados{
+        display: block;
+    }
+    .contato .dados .lista-dados{
+        width: 100%;
+    }
+    .card {
+        width: 30vh;
+        height: 32vh;
+    }
+    .direita {
+        margin-top: 20px;
+    }
+}
