@@ -713,6 +713,7 @@ html{
 }
 .contato .lista-dados img{
     width: 100%;
+    heigth: 87%;
 }
 .contato .lista-dados .info{
     position: absolute;
