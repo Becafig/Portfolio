@@ -257,7 +257,7 @@ html{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 .sobremim .contener-seção p{
     font: 18px;
@@ -775,6 +775,30 @@ footer .retorno{
     line-height: 50px;
     font-size: 18px;
 }
+.org {
+    margin-right: auto;
+}
+.org .circle {
+    padding: 0 4px;
+  }
+.org .circle .circle2 {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 5px;
+  }
+.red {
+    background-color: #ff605c;
+  }
+.yellow {
+    background-color: #ffbd44;
+  }
+.green {
+    background-color: #00ca4e;
+  }
+  
 
 @media screen and (max-width:980px){
     nav{
@@ -856,38 +880,3 @@ footer .retorno{
 }
 
 
-
-
-
-
-
-
-.org {
-    margin-right: auto;
-}
-
-.org .circle {
-    padding: 0 4px;
-  }
-  
-  .org .circle .circle2 {
-    display: inline-block;
-    align-items: center;
-    width: 10px;
-    height: 10px;
-    padding: 1px;
-    border-radius: 5px;
-  }
-  
-  .red {
-    background-color: #ff605c;
-  }
-  
-  .yellow {
-    background-color: #ffbd44;
-  }
-  
-  .green {
-    background-color: #00ca4e;
-  }
-  
